@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAVERA — Teknoloji ve İnovasyon Ekibi</title>
+  <meta name="description" content="MAVERA; teknoloji, inovasyon ve proje geliştirme alanında çalışan genç ve dinamik ekiptir. Ana proje: NeuroBloom.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="MAVERA — Fikirden Etkiye, Birlikte">
+  <meta property="og:description" content="NeuroBloom ve MAVERA projelerini keşfedin.">
+  <meta property="og:image" content="assets/images/achievements/tobb-ödül-toreni.jpg">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo-text">MAVERA</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" id="nav-about">Hakkımızda</a></li>
+          <li><a href="#team" id="nav-team">Ekibimiz</a></li>
+          <li><a href="#project" id="nav-project">Projemiz</a></li>
+          <li><a href="#achievements" id="nav-achievements">Başarılarımız</a></li>
+          <li><a href="#contact" id="nav-contact">İletişim</a></li>
+        </ul>
+      </nav>
+      <button class="lang-btn" id="lang-toggle" onclick="toggleLanguage()">EN</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title" id="hero-title">Fikirden Etkiye, Birlikte.</h1>
+      <p class="hero-desc" id="hero-desc">MAVERA; teknoloji, inovasyon, araştırma ve proje geliştirme alanlarında çalışan genç, dinamik ve üretken bir ekiptir.</p>
+      <div class="btn-group">
+        <a href="#project" class="btn-primary" id="btn-project">Projemizi Keşfet</a>
+        <a href="#contact" class="btn-secondary" id="btn-contact">Bizimle İletişime Geç</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hakkımızda -->
+  <section id="about">
+    <div class="container">
+      <h2 id="about-title" style="font-size: 2rem; margin-bottom: 24px;">Biz Kimiz?</h2>
+      <p id="about-text" style="font-size: 1.1rem; color: var(--text-muted); max-width: 800px; margin-bottom: 32px;"></p>
+      
+      <div class="grid-2">
+        <div class="card" style="padding:24px;">
+          <h3 style="color:var(--accent-blue); margin-bottom:12px;">Nasıl Çalışıyoruz?</h3>
+          <p id="about-how" style="color:var(--text-muted);"></p>
+        </div>
+        <div class="card" style="padding:24px;">
+          <h3 style="color:var(--accent-purple); margin-bottom:12px;">Neye İnanıyoruz?</h3>
+          <p id="about-belief" style="color:var(--text-muted);"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ekibimiz -->
+  <section id="team" style="background: rgba(255,255,255,0.02);">
+    <div class="container">
+      <h2 style="font-size: 2rem; margin-bottom: 40px;">Ekibimiz</h2>
+      <div class="grid-2" id="team-container"></div>
+    </div>
+  </section>
+
+  <!-- Projemiz: NeuroBloom -->
+  <section id="project">
+    <div class="container">
+      <div style="margin-bottom: 40px;">
+        <span style="color: var(--accent-purple); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Ana Projemiz</span>
+        <h2 style="font-size: 2.5rem; margin-top: 8px;">NeuroBloom</h2>
+        <p style="color: var(--accent-blue); font-size: 1.2rem;" id="project-subtitle"></p>
+      </div>
+      <p id="project-desc" style="font-size: 1.1rem; color: var(--text-muted); max-width: 800px; margin-bottom: 32px;"></p>
+      <div class="card" style="padding: 32px;">
+        <h3 style="margin-bottom: 16px;">Öne Çıkan Özellikler</h3>
+        <ul id="project-features" style="list-style-position: inside; color: var(--text-muted);"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Başarılarımız -->
+  <section id="achievements" style="background: rgba(255,255,255,0.02);">
+    <div class="container">
+      <h2 style="font-size: 2rem; margin-bottom: 40px;">Başarılarımız ve Kilometre Taşları</h2>
+      <div class="grid-2" id="achievements-container"></div>
+    </div>
+  </section>
+
+  <!-- İletişim -->
+  <section id="contact">
+    <div class="container" style="text-align: center;">
+      <h2 style="font-size: 2.5rem; margin-bottom: 16px;">Birlikte Üretelim, Birlikte Geliştirelim</h2>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 32px auto;">Yeni fikirleri geliştirmek ve projelerimizi ileri taşımak için iş birliğine açığız.</p>
+      <div style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
+        <a href="mailto:maverat2k@gmail.com" class="btn-primary">E-posta Gönder (maverat2k@gmail.com)</a>
+        <a href="https://instagram.com/maverat2k" target="_blank" rel="noopener" class="btn-secondary">Instagram (@maverat2k)</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn-secondary">LinkedIn (Mavera NeuroBloom)</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding: 32px 0; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: var(--text-muted);">
+    <div class="container">
+      <p>© <span id="year"></span> MAVERA. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
